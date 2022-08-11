@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableViewCell" customModule="CustomKeyboardView" customModuleProvider="target">
+            <connections>
+                <outlet property="calculatorTextField" destination="QH7-tn-oLA" id="e1j-l8-NVZ"/>
+                <outlet property="nameLabel" destination="AKP-kK-G31" id="L9q-Fx-5Kw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="CustomKeyboardView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QH7-tn-oLA">
+                        <rect key="frame" x="40" y="0.0" width="280" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支出" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKP-kK-G31">
+                        <rect key="frame" x="0.0" y="0.0" width="35" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AKP-kK-G31" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9RX-am-5eA"/>
+                    <constraint firstAttribute="bottom" secondItem="QH7-tn-oLA" secondAttribute="bottom" id="Ai3-8L-aJx"/>
+                    <constraint firstAttribute="bottom" secondItem="AKP-kK-G31" secondAttribute="bottom" id="VRj-Tz-4Yv"/>
+                    <constraint firstItem="QH7-tn-oLA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bnM-Mf-cUG"/>
+                    <constraint firstItem="QH7-tn-oLA" firstAttribute="leading" secondItem="AKP-kK-G31" secondAttribute="trailing" constant="5" id="ezY-Jy-SPQ"/>
+                    <constraint firstItem="AKP-kK-G31" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="orR-ru-Pl5"/>
+                    <constraint firstAttribute="trailing" secondItem="QH7-tn-oLA" secondAttribute="trailing" id="prw-h4-JWX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="139" y="121"/>
+        </tableViewCell>
+    </objects>
+</document>
