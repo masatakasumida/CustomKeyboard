@@ -29,6 +29,9 @@ class ViewController: UIViewController, CustomKeyboardViewDelegate {
                 calculationTextField.text = String(deleteBackward)
             }
         case "=":
+            if calculationTextField.text == "" {
+                calculationTextField.text = "0"
+            }
             let answer = formattedAnswer(calculationTextField.text ?? "0")
             calculationTextField.text = answer
         default:
@@ -45,7 +48,7 @@ class ViewController: UIViewController, CustomKeyboardViewDelegate {
     }
 
     func createKeyboardView() {
-        let keyboard = CustomKeyboardView(frame: .init(origin: .zero, size: .init(width: 284, height: 284)))
+        let keyboard = CustomKeyboardView(frame: .init(origin: .zero, size: .init(width: UIScreen.main.bounds.width, height: 284)))
         keyboard.delegate = self
         calculationTextField.inputView = keyboard
         // toolbar
